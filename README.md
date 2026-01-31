@@ -4,7 +4,9 @@ A centralized repo to hold my implementations of various sorting algorithms in
 different languages.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
+
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
 **Table of Contents**
 
 - [list of implementations](#list-of-implementations)
@@ -27,6 +29,7 @@ Currently implemented are:
 - Insertion Sort
   - [Bash](./bash/insertion_sort.sh)
   - [C++](./cpp/insertion_sort.cpp)
+  - [Go](./go/insertion_sort.go)
   - [Ruby](./ruby/insertion_sort.rb)
 - Merge Sort
   - [Bash](./bash/merge_sort.sh)

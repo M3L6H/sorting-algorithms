@@ -5,7 +5,7 @@ import (
   "testing"
 ) 
 
-func TestEmpty(t *testing.T) {
+func TestBubbleSortEmpty(t *testing.T) {
   i := []int{}
   d := []int{}
   e := []int{}
@@ -15,7 +15,7 @@ func TestEmpty(t *testing.T) {
   }
 }
 
-func TestOne(t *testing.T) {
+func TestBubbleSortOne(t *testing.T) {
   i := []int{1}
   d := []int{1}
   e := []int{1}
@@ -25,7 +25,7 @@ func TestOne(t *testing.T) {
   }
 }
 
-func TestSwap(t *testing.T) {
+func TestBubbleSortSwap(t *testing.T) {
   i := []int{2, 1}
   d := []int{2, 1}
   e := []int{1, 2}
@@ -35,7 +35,7 @@ func TestSwap(t *testing.T) {
   }
 }
 
-func TestAllSame(t *testing.T) {
+func TestBubbleSortAllSame(t *testing.T) {
   i := []int{8, 8, 8, 8, 8}
   d := []int{8, 8, 8, 8, 8}
   e := []int{8, 8, 8, 8, 8}
@@ -45,7 +45,7 @@ func TestAllSame(t *testing.T) {
   }
 }
 
-func TestMany(t *testing.T) {
+func TestBubbleSortMany(t *testing.T) {
   i := []int{7, 8, 6, 3, 9, 1, 6, 5, 4, 8, 3}
   d := []int{7, 8, 6, 3, 9, 1, 6, 5, 4, 8, 3}
   e := []int{1, 3, 3, 4, 5, 6, 6, 7, 8, 8, 9}
