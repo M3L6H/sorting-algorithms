@@ -34,6 +34,7 @@ Currently implemented are:
 - Merge Sort
   - [Bash](./bash/merge_sort.sh)
   - [C++](./cpp/merge_sort.cpp)
+  - [Go](./go/merge_sort.go)
   - [Ruby](./ruby/merge_sort.rb)
 - Quick Sort
   - [C++](./cpp/quick_sort.cpp)
