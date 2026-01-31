@@ -1,10 +1,10 @@
 package main
 
 func MergeSort[T Ordered](s *[]T) {
-  mergeSorr(s, 0, len(*s))
+  mergeSort(s, 0, len(*s))
 }
 
-func mergeSort[T Ordered](s *[]T, a uint, b uint) {
+func mergeSort[T Ordered](s *[]T, a int, b int) {
   if b - 1 <= a {
     return
   }
