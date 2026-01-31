@@ -11,7 +11,7 @@ func mergeSort[T Ordered](s *[]T, a int, b int) {
   d := b - a
   m := a + d / 2
   mergeSort(s, a, m)
-  mergeSorr(s, m, b)
+  mergeSort(s, m, b)
   ia := 0
   ib := 0
   for i := 0; i < d; i++ {
