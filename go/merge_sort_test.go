@@ -61,6 +61,6 @@ func TestMergeSortMany(t *testing.T) {
   e := []int{1, 3, 3, 4, 5, 6, 6, 7, 8, 8, 9}
   MergeSort(&d)
   if !slices.Equal(d, e) {
-    t.Errorf("InsertionSort(%v) = %v; want %v", i, d, e);
+    t.Errorf("MergeSort(%v) = %v; want %v", i, d, e);
   }
 }
