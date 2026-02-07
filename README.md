@@ -25,6 +25,7 @@ Currently implemented are:
 - Counting Sort
   - [Bash](./bash/counting_sort.sh)
   - [C++](./cpp/counting_sort.cpp)
+  - [Go](./go/counting_sort.go)
   - [Ruby](./ruby/counting_sort.rb)
 - Insertion Sort
   - [Bash](./bash/insertion_sort.sh)

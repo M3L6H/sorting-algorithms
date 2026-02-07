@@ -9,7 +9,7 @@ func TestMergeSortEmpty(t *testing.T) {
   i := []int{}
   d := []int{}
   e := []int{}
-  InsertionSort(&d)
+  MergeSort(&d)
   if !slices.Equal(d, e) {
     t.Errorf("MergeSort(%v) = %v; want %v", i, d, e);
   }
@@ -19,7 +19,7 @@ func TestMergeSortOne(t *testing.T) {
   i := []int{1}
   d := []int{1}
   e := []int{1}
-  InsertionSort(&d)
+  MergeSort(&d)
   if !slices.Equal(d, e) {
     t.Errorf("MergeSort(%v) = %v; want %v", i, d, e);
   }
@@ -29,7 +29,7 @@ func TestMergeSortSwap(t *testing.T) {
   i := []int{2, 1}
   d := []int{2, 1}
   e := []int{1, 2}
-  InsertionSort(&d)
+  MergeSort(&d)
   if !slices.Equal(d, e) {
     t.Errorf("MergeSort(%v) = %v; want %v", i, d, e);
   }
@@ -39,7 +39,7 @@ func TestMergeSortOdd(t *testing.T) {
   i := []int{5, 1, 4}
   d := []int{5, 1, 4}
   e := []int{1, 4, 5}
-  InsertionSort(&d)
+  MergeSort(&d)
   if !slices.Equal(d, e) {
     t.Errorf("MergeSort(%v) = %v; want %v", i, d, e);
   }
@@ -49,7 +49,7 @@ func TestMergeSortAllSame(t *testing.T) {
   i := []int{8, 8, 8, 8, 8}
   d := []int{8, 8, 8, 8, 8}
   e := []int{8, 8, 8, 8, 8}
-  InsertionSort(&d)
+  MergeSort(&d)
   if !slices.Equal(d, e) {
     t.Errorf("MergeSort(%v) = %v; want %v", i, d, e);
   }
