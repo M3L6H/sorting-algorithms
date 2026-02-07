@@ -21,13 +21,15 @@ func CountingSort(s *[]int) {
     }
   }
   j := 0
-  for i := 0; i < len(c); i++ {
-    var n int
-    if i % 2 == 0 {
-      n = i / 2
-    } else {
-      n = (i + 1) / -2
+  for i := len(c) - (len(c) % 2); i > 0; i -= 2 {
+    n := (i) / -2
+    for k := 0; k < c[i - 1]; k++ {
+      (*s)[j] = n
+      j++
     }
+  }
+  for i := 0; i < len(c); i += 2 {
+    n := i / 2
     for k := 0; k < c[i]; k++ {
       (*s)[j] = n
       j++
