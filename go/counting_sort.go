@@ -11,9 +11,8 @@ func CountingSort(s *[]int) {
       mx = elt_abs
     }
   }
-  mx += 1
   mx *= 2
-  c := make([]int, 0, mx)
+  c := make([]int, mx + 1)
   for _, elt := range *s {
     if elt >= 0 {
       c[elt * 2]++
