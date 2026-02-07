@@ -11,8 +11,9 @@ func CountingSort(s *[]int) {
       mx = elt_abs
     }
   }
+  mx += 1
   mx *= 2
-  c := make([]int, 0, mx + 1)
+  c := make([]int, 0, mx)
   for _, elt := range *s {
     if elt >= 0 {
       c[elt * 2]++
@@ -22,8 +23,14 @@ func CountingSort(s *[]int) {
   }
   j := 0
   for i := 0; i < len(c); i++ {
+    var n int
+    if i % 2 == 0 {
+      n = i / 2
+    } else {
+      n = (i + 1) / -2
+    }
     for k := 0; k < c[i]; k++ {
-      (*s)[j] = i
+      (*s)[j] = n
       j++
     }
   }
