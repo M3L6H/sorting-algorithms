@@ -22,7 +22,7 @@ func CountingSort(s *[]int) {
   }
   j := 0
   for i := 0; i < len(c); i++ {
-    for k := 0; k < c[i]; k {
+    for k := 0; k < c[i]; k++ {
       (*s)[j] = i
       j++
     }
