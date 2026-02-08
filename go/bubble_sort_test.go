@@ -54,3 +54,13 @@ func TestBubbleSortMany(t *testing.T) {
     t.Errorf("BubbleSort(%v) = %v; want %v", i, d, e);
   }
 }
+
+func TestBubbleSortNeg(t *testing.T) {
+  i := []int{-5, -8, 3, 1, -5, 10, 7, 3, -5}
+  d := []int{-5, -8, 3, 1, -5, 10, 7, 3, -5}
+  e := []int{-8, -5, -5, -5, 1, 3, 3, 7, 10}
+  BubbleSort(&d)
+  if !slices.Equal(d, e) {
+    t.Errorf("BubbleSort(%v) = %v; want %v", i, d, e);
+  }
+}
