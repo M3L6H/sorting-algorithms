@@ -46,4 +46,5 @@ Currently implemented are:
 - Selection Sort
   - [Bash](./bash/selection_sort.sh)
   - [C++](./cpp/selection_sort.cpp)
+  - [Go](./go/selection_sort.go)
   - [Ruby](./ruby/selection_sort.rb)
