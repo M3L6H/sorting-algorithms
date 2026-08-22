@@ -7,6 +7,6 @@ func InsertionSort[T Ordered](s *[]T) {
 		for ; j >= 0 && c < (*s)[j]; j-- {
 			(*s)[j + 1] = (*s)[j]
 		}
-		(*s)[j] = c
+		(*s)[j + 1] = c
 	}
 }
