@@ -5,7 +5,7 @@ func InsertionSort[T Ordered](sp *[]T) {
         return
     }
     
-    s := sp
+    s := *sp
      
 	for i := 1; i < len(s); i++ {
 	    c := (s)[i]
